@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do </title>
+    
+</head>
+<body>
+    <!-- <script>
+        var list = document.querySelector('.todo');
+        var saved = localStorage.getItem('list');
+        
+
+       list.innerHTML = saved;
+
+    </script> -->
+    <div class="container">
+
+        <header class="text-center text-light my-4">
+          <h1 class="mb-4">To-Do List</h1>
+          <form class="search">
+            <input class="form-control m-auto" type="text" name="search" placeholder="search" />
+          </form>
+        </header>
+    
+        <ul class="list-group todo mx-auto text-light">
+          <!-- <li class="list-group-item d-flex justify-content-between align-items-center text-light ">
+            <span>play mariokart</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center text-light">
+            <span>defeat ganon in zelda</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center text-light">
+            <span>make a veggie pie</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li> -->
+        </ul>
+    
+        <form class="add text-center my-4">
+          <label class="text-light my-2">Add a new item...</label>
+          <input class="form-control m-auto" type="text" name="add" />
+          <button type="submit" class="btn btn-light my-1" > Add </button> 
+        </form>
+        <div class="result my-4 d-none text-center bg-light">
+          <div class="container lead">
+              <p> You are <span class="text-primary display-4 p-3" id="ans"></span>correct </p>
+          </div>
+      </div>
+      </div>
+      <script src="sandbox.js"></script>
+</body>
+</html>
+  
